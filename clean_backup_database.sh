@@ -1,9 +1,7 @@
 
 fecha_actual=`date +%Y-%m-%d`
 
-#fecha_ultimo_dia_mes_anterior=`date -d "$(date -d $fecha_actual +%Y-%m-01) -1 day" +%d-%m-%Y`
-
-fecha_ultimo_dia_mes_anterior="14-05-2024"
+fecha_ultimo_dia_mes_anterior=`date -d "$(date -d $fecha_actual +%Y-%m-01) -1 day" +%d-%m-%Y`
 
 nombre_backup=`ls -th $1.$fecha_ultimo_dia_mes_anterior*.dump | head -1`
 
